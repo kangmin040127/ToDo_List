@@ -1,0 +1,132 @@
+body{
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+    background-image: url("imgs/backgroundIMG.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    padding-top: 20px;
+    background-color: white;
+    min-height: 100vh;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.input-area{
+    margin-top: 30px;
+}
+.input-area input{
+    width: 350px;
+    height: 36px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+}
+.input-area input:focus{
+    outline: none;
+}
+.input-area button{
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    transition: all 0.5s ease;
+
+}
+.input-area button:hover{
+    background-color: lightgray;
+    color: green;
+}
+.task-area{
+    border: 1px solid lightgray;
+    margin-top: 30px;
+}
+.task-tabs{
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    position: relative;
+
+}
+.task-tabs div{
+    padding: 1em;
+}
+#under-line{
+    background-color: gray;
+    position: absolute;
+    width: 70px;
+    height: 4px;
+    left: 0px;
+    top: 52px;
+    padding: 0;
+}
+
+button{
+    width: 60px;
+    height: 35px;
+    border: 1px solid lightgray;
+}
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-text{
+    margin-left: 15px;
+}
+
+.check-btn {
+    transition: all 0.3s ease-in-out;
+    height: 50px;
+    margin-right: -6px;
+    background-color: white;
+    border: none;
+}
+.check-btn i{
+    color: rgb(0, 160, 40);
+    
+}
+.cancel-btn i{
+    color: rgb(167, 1, 1);
+}
+.cancel-btn{
+    margin: 0;
+    transition: all 0.3s ease-in-out;
+    height: 50px;
+    background-color: white;
+    border: none;
+}
+
+.check-btn:hover{
+    background-color: rgb(56, 192, 56);
+    color: rgb(255, 255, 255);
+}
+
+.cancel-btn:hover{
+    background-color: rgb(233, 83, 83);
+    color: white;
+}
+
+.task-done{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(197, 197, 197);
+    margin:0;
+}
+
+.task-done-text{
+    margin-left: 15px;
+    text-decoration: line-through;
+}
+.task-done-btn{
+    display: inline-block;
+}
+
+input[type="text"]::placeholder{
+    opacity: 0.5;
+    padding-left: 5px;
+}
+input[type="text"]:focus::placeholder{
+    opacity: 0;
+}
+
+
