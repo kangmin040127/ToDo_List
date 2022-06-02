@@ -9,14 +9,18 @@ body{
 .container{
     padding-top: 20px;
     background-color: white;
+    height: 100%;
+    max-width: 800px;
     min-height: 100vh;
+    border-top: 10px solid rgb(199, 199, 199);
+    border-bottom: 10px solid rgb(199, 199, 199);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .input-area{
     margin-top: 30px;
 }
 .input-area input{
-    width: 350px;
+    width: 50%;
     height: 36px;
     border: 1px solid lightgray;
     border-radius: 3px;
@@ -48,13 +52,14 @@ body{
     padding: 1em;
 }
 #under-line{
-    background-color: gray;
+    background-color: rgb(173, 173, 173);
+    height: 4px !important;
     position: absolute;
-    width: 70px;
-    height: 4px;
-    left: 0px;
     top: 52px;
-    padding: 0;
+    left: 0px;
+    width: 48px;
+    transition: 0.5s;
+    padding: 0px
 }
 
 button{
@@ -127,6 +132,10 @@ input[type="text"]::placeholder{
 }
 input[type="text"]:focus::placeholder{
     opacity: 0;
+}
+
+.task-tabs div{
+    cursor: pointer;
 }
 
 
